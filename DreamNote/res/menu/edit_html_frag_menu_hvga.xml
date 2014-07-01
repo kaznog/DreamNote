@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/edit_menu_frag_savegroup"
+        android:icon="@drawable/ic_menu_save"
+        android:title="@string/savebutton_description"
+        android:showAsAction="always|withText"
+    >
+    	<menu>
+    	    <group
+    	        android:id="@+id/edit_menu_frag_save_subgroup"
+    	        android:checkableBehavior="none"
+    	    >
+				<item
+				    android:id="@+id/edit_menu_frag_savehtml"
+				    android:title="@string/clip_savehtmlbutton_description"
+				    android:showAsAction="always|withText"
+				/>
+				<item
+				    android:id="@+id/edit_menu_frag_savepic"
+				    android:title="@string/clip_savepicbutton_description"
+				    android:showAsAction="always|withText"
+				/>
+    	    </group>
+    	</menu>
+    </item>
+	<item
+	    android:id="@+id/edit_menu_frag_cancel"
+	    android:title="@string/cancelbutton_description"
+	    android:showAsAction="always|withText"
+	/>
+	<item
+	    android:id="@+id/edit_menu_frag_viewswitch"
+	    android:icon="@drawable/ic_menu_down"
+	    android:showAsAction="always"
+	    android:title="@string/viewswitchbutton_description"
+	/>
+</menu>

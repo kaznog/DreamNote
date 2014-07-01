@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.kaznog.android.dreamnote"
+	android:installLocation="auto"
+	android:versionCode="108"
+	android:versionName="1.169"
+>
+	<uses-sdk
+		android:minSdkVersion="7"
+		android:targetSdkVersion="8"
+    />
+	<supports-screens
+	    android:smallScreens="false"
+	    android:normalScreens="true"
+	    android:largeScreens="true"
+	    android:xlargeScreens="true"
+	/>
+<!-- <uses-permission android:name="android.permission.CAMERA" />// -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<application
+		android:icon="@drawable/launcher_icon"
+		android:label="@string/app_name"
+		android:debuggable="false"
+	>
+		<activity
+			android:name=".SplashActivity"
+			android:label="@string/app_name"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+		    android:name=".fragment.Notes"
+		    android:label="@string/app_name"
+		    android:windowSoftInputMode="adjustPan"
+		    android:configChanges="keyboardHidden"
+ 		    android:launchMode="singleTop"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+		<activity-alias
+		    android:name=".DreamNoteHomeActivity"
+		    android:targetActivity=".fragment.Notes"
+		    android:label="@string/app_name"
+			android:exported="true"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity-alias>
+		<activity
+		    android:name=".fragment.PhotoEditFragmentActivity"
+		    android:windowSoftInputMode="adjustPan"
+		    android:configChanges="keyboardHidden"
+		    android:exported="true"
+		>
+			<intent-filter>
+			    <action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+			    <data android:mimeType="image/jpeg"/>
+			</intent-filter>
+		</activity>
+		<activity
+		    android:name=".fragment.HtmlEditFragmentActivity"
+		    android:configChanges="orientation|keyboardHidden"
+		    android:windowSoftInputMode="adjustPan"
+		    android:exported="true"
+		>
+
+			<intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="text/plain" />
+			</intent-filter>
+
+		</activity>
+<!--
+		<activity
+			android:name=".util.CalendarActivity"
+			android:screenOrientation="portrait"
+		/>
+ -->
+		<activity
+			android:name=".smartclip.ClipServiceNotifyActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+		/>
+		<service
+		    android:name=".smartclip.ClipService"
+		    android:exported="false"
+		>
+			<intent-filter>
+				<action android:name="com.kaznog.android.dreamnote.smartclip.ClipServiceInterface" />
+			</intent-filter>
+		</service>
+		<service
+		    android:name=".evernote.DreamPostEnmlService"
+		    android:exported="false"
+		>
+		</service>
+<!--
+		<activity
+		    android:name=".evernote.EvernoteSignInActivity"
+		    android:exported="false"
+		>
+		</activity>
+ -->
+        <activity
+          android:name="com.evernote.client.oauth.android.EvernoteOAuthActivity"
+          android:launchMode="singleTask"
+          android:configChanges="orientation|keyboard"
+          android:exported="true"
+        >
+          <intent-filter>
+            <!-- Change this to be en- followed by your consumer key -->
+            <data android:scheme="en-kaznog-4082" />
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <category android:name="android.intent.category.DEFAULT" />
+          </intent-filter>
+        </activity>
+		<provider
+		    android:name=".db.DreamNoteProvider"
+		    android:authorities="com.kaznog.android.dreamnote.dreamnoteprovider"
+		    android:exported="false"
+		/>
+		<provider
+		    android:name=".util.FileProvider"
+		    android:authorities="com.kaznog.android.dreamnote"
+		    android:exported="false">
+		</provider>
+	</application>
+</manifest>

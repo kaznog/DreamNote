@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/pre_menu_frag_del"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="@string/delete_button_description"
+        android:showAsAction="always"
+    />
+	<item
+	    android:id="@+id/pre_menu_frag_share"
+	    android:icon="@drawable/ic_menu_share"
+	    android:title="@string/sharebutton_description"
+	    android:showAsAction="always"
+	/>
+	<item
+	    android:id="@+id/pre_menu_frag_edit"
+	    android:icon="@drawable/ic_menu_edit"
+	    android:title="@string/editbutton_description"
+	    android:showAsAction="always"
+	/>
+    <item
+        android:id="@+id/pre_menu_frag_ever"
+        android:icon="@drawable/ic_menu_evernote"
+        android:title="@string/post_evernote"
+        android:showAsAction="always"
+    />
+</menu>

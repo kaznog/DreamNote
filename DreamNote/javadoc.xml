@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" additionalparam="-encoding UTF-8 -charset UTF-8 " author="true" classpath="." destdir="docs" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.kaznog.android.dreamnote,com.kaznog.android.dreamnote.memo,com.kaznog.android.dreamnote.util,com.kaznog.android.dreamnote.todo,com.kaznog.android.dreamnote.globalmenu,com.kaznog.android.dreamnote.databank,com.kaznog.android.dreamnote.databank.atompub,com.kaznog.android.dreamnote.camera,com.kaznog.android.dreamnote.smartclip,com.kaznog.android.dreamnote.search" source="1.5" sourcepath="gen;src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

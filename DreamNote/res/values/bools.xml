@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_tablet">false</bool>
+    <bool name="isOverQvga">false</bool>
+    <bool name="split_action_bar_is_narrow">true</bool>
+</resources>

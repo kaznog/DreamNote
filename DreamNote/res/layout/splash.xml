@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+>
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:src="@drawable/logo_splash"
+		android:scaleType="centerInside"
+		android:layout_centerInParent="true"
+	/>
+	<TextView
+		android:id="@+id/splash_raindrop"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text=""
+		android:autoLink="web"
+		android:linksClickable="true"
+		android:layout_alignParentBottom="true"
+		android:textColor="#FF000000"
+		android:textColorLink="#FF0000FF"
+	/>
+</RelativeLayout>

@@ -1,0 +1,205 @@
+2011/06/03 Ver1.0977
+画像メモ撮影時に横画面に対応。
+カメラ機能呼び出し方法の改善。
+入力処理不具合改善
+
+2011/06/03 Ver1.09771
+カメラ機能の修正を下と思ったら、
+問題多発！！GalaxySユーザーの方に検証をしていただいて
+解消されたようなのでバージョンアップ。
+YS様、直人様サポートありがとうございました！
+winseria様T-01Cでの動作検証ありがとうございました！
+
+2011/06/03 Ver1.09772
+1日に3回もバージョンアップしたくないですよね。
+私はさせたくありません。
+不具合報告ありがとうございます。
+不具合ほんと申し訳ない。
+大きな画面サイズのWebページを画像保存しようとした際にメモリ不足になって強制終了する場合に画像解像度は変えずに色階層を減らして保存を試みる処理を追加し、それでもメモリが足らなければ登録を諦めて処理を中止するメッセージを表示するようにしました。
+
+2011/06/03 Ver1.09773
+開発者様向け対応？
+ログを結構出力してしまっていたのでログを出力しないようにしました。
+
+2011/06/04 Ver1.09774
+ノート閲覧画面不具合修正
+各画面横画面対応
+Webクリップ登録横画面時のサムネイル不具合修正など
+
+2011/06/09 Ver1.098
+Webクリップ時の文字解析方法変更
+ウィジェット化への準備。
+ノート閲覧画面のメモ長押しでショートカット作成
+縦持ち時Webクリップのサムネイルの取得方法を正常時に戻しました。(つもり)
+
+2011/06/13 Ver1.0982
+縦横切替時に強制終了する場合への対処。
+jpeg既存写真を共有機能にて追加できるようにしました。
+
+2011/06/14 Ver1.0983
+WebクリップにCSSが取得し切れなかった場合への対処。
+jpeg既存写真共有方法がエクスプローラ系のみにしか対応していなかったので、ギャラリーからの共有に対応。
+jpeg既存写真共有時の縦横切替時に強制終了する場合への対処。
+m(_ _)m
+
+2011/06/15 Ver1.0984
+ホーム画面不具合への対処
+
+2011/06/17 Ver1.0985
+Webクリップの不具合修正
+Webクリップ処理方法改変準備など
+
+2011/06/18 Ver1.0986
+端末初期化時にWebクリップのデータを再登録できる機能を追加
+ノート閲覧画面で大量のコンテンツを表示している時に縦横切り替えた際の不具合を対処
+
+2011/06/22 Ver1.0987
+Webクリップ完了を待つ方法を廃止し、バックグラウンド処理によるステータスバーへの通知に変更
+Webクリップ画像保存方法を変更。1枚の画像保存から、分割画像保存に変更。大きなページでは画像保存時にメモリ不足で失敗していたのを対処
+
+2011/06/23 Ver1.0988
+Webクリップ処理調整
+
+2011/06/24 Ver1.0989
+Webクリップ処理調整
+なんとamazonがクリップできていなかったので対応
+
+2011/06/24 Ver1.099
+WebクリップでGMailやYahoo Mailなどの一部のページパターンでの不具合に対処
+Webクリップ登録画面でログインする際の不具合を修正
+
+2011/06/24 Ver1.0991
+おまけ機能のWebクリップ再登録機能で不具合があったのでやっつけ対応
+面倒になったら機能消すかな
+
+2011/06/28 Ver1.0992
+クリップできないページへの対応など
+
+
+2011/06/28 Ver1.0993
+Webクリップにて、Googleプレイスなどの一部のページが保存できなかったので対応
+Webクリップ時に埋め込み画像の不具合に対応(GPS未対応)
+
+In Web clips, save the page because it could not support some like Google Place (non GPS)
+Corresponds to the failure of the embedded images when Web Clip
+
+
+2011/06/30 Ver1.0994
+縦横切替り時の不具合修正
+ノート画面Webクリップ長押しでサムネイル再生成を追加
+Webクリップ中の通知方法変更(まだ確定せず)
+英語表示されるべき環境で、一部日本語表示になっているのを修正
+
+Fixed bug when changing screen orientation
+Add to regenerate thumbnails and hold notebook screen Web Clips
+English rather than fix the message out that the Japanese
+Notification of Changes to Web Clip
+
+2011/06/30 Ver1.0995
+Webクリップ処理中にウェイトを入れ過ぎていたので、OSにKILLされない程度に速くしてみた。
+一部のWebページでWebクリップできないパターンがあったので対処。
+Webクリップで画像保存したものをプレビューした際に、小さく表示されてしまっていたのを画面幅に合うように修正。
+
+Web Clips bug fix.
+Processing of Web Clips, increased the speed.
+
+2011/07/06 Ver1.0996
+Webクリッププレビュー不具合への対処
+ノート閲覧画面での不具合への対処
+
+Web Clip preview bug fix.
+Notes Viewer bug fix.
+
+2011/07/05 Ver1.0997
+Webクリップのいくつかの不具合に対処
+公開予定のいくつかの新機能への準備
+
+Fixed a bug of some of the Web Clip.
+Prepare for some new features will be published.
+
+2011/07/06 Ver1.0998
+実験的な機能として、「Evernote」がインストールされている場合に、Webクリップ(画像)プレビュー画面から「Evernote」のWebクリップとして追加する機能を追加。※画面サイズの大きなWebクリップの場合は「Evernote」でメモリ不足になってしまう場合があります。
+
+Experimental features
+
+Adding a experimental function
+"Evernote" if it is installed, Web Clips (image) from the preview screen "Evernote" to add additional features as Web Clips.
+For large screen Web Clips "Evernote" may become out of memory.
+
+
+2011/07/14 Ver1.0999
+少しサイズが大きくなっていますが、次回更新時に小さくします。
+Webクリップ時の報告を受けた不具合に対処。
+実験的な機能として、「Evernote」がインストールされている場合に、Webクリップ(HTML)のプレビュー画面から「Evernote」のWebクリップとして追加する機能を追加。(Evernoteエクスポートファイルを生成し、Android版Evernoteにインポートする)
+※最新のAndroid版Evernoteでは画像付のHTMLクリップを転送すると殆んどの場合、自動的に削除するようです。
+今後、DreamNote単体で「Evernote」のWebクリップ登録を可能にするので解決する予定です。
+
+Adding a experimental function
+"Evernote" if it is installed, Web Clips (html) from the preview screen "Evernote" to add additional features as Web Clips.
+
+2011/07/16 Ver1.1
+Webクリップ(HTML)のEvernote転送不具合修正
+多少見れるページが増えました。
+
+Web Clips (HTML) bug fix transfer of Evernote
+
+
+2011/07/16 Ver1.101
+Evernote転送一時ファイルの保存場所指定不具合を修正
+
+Fixed a bug when specifying a location for the file transfer Evernote
+
+
+2011/07/21 Ver1.102
+テキストメモ、ToDoの削除前確認画面追加
+ノート閲覧画面のコンテンツ長押し時メニューに削除機能を追加
+英語ロケールにてToDo期限設定時の不具合を修正
+Evernote転送時に一部のスタイルを反映
+Evernote転送時に備考を付加
+
+Text memo, ToDo Added confirmation before deleting
+The contents of the screen and hold menu for notes, add delete function
+Fixed a bug when setting a deadline in the English locale ToDo
+When transferred to Evernote, reflecting the style of some
+When transferred to Evernote, added remarks
+
+2011/07/26 Ver1.103
+Webクリッププレビュー画面表示開始時の不具合を修正
+mobile.twitter.comへのログイン時不具合を修正
+EvernoteへWebクリップを転送する際のENML構築処理を再構築
+
+Fixed a bug at the start of the preview screen Web Clips
+Fixed bug when logging in to mobile.twitter.com
+ENML rebuild the building process of transferring a Web Clip to Evernote
+
+2011/08/02 Ver1.105
+設定画面にEvernoteアカウント設定項目を追加。(Evernoteパスワードは暗号化保存しています)
+DreamNote単体でEvernoteへWebクリップをアップロードするようにしました。
+処理が遅いので一部のCSSのみ対応しています。
+処理が遅いのでバックグラウンドでEvernoteへの転送をバックグラウンドで処理するように変更。
+メモリが足りずにバックグラウンド処理を諦めることがあるかも。
+
+Add your Evernote account settings configuration screen. (Evernote passwords are stored encrypted)
+Web Clip is now uploaded to Evernote alone DreamNote.
+CSS only supports some of the slower it.
+Change the background to handle the transfer to it is slow in the background Evernote.
+That might give a background process to have enough memory.
+
+2011/08/05 Ver1.106
+ノート閲覧画面での不具合修正
+
+Views notebook screen bug fixed
+
+
+2011/08/09 Ver1.107
+Xperia SO-01BのAndroid版Evernoteでスナップショット(写真)がアップロード出来なくなっていたのに気付いたので、
+DreamNoteでアップロード出来る様にしておきました。
+
+You can upload images to Evernote notes.
+
+2011/08/13 Ver1.108
+画像メモプレビューにて横画面にすると異常終了する不具合に対処
+設定画面でWebクリップ再登録時の不具合に対処
+
+Fixed a bug in landscape mode to crash the image preview notes
+Fixed a bug when re-registering Web Clip

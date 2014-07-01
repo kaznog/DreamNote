@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".fragment.PhotoPreviewFragmentActivity$PhotoPreviewFragment" >
+	<ImageView
+		android:id="@+id/item_category_line"
+		android:layout_width="8dip"
+		android:layout_height="match_parent"
+		android:layout_gravity="left"
+		android:src="@drawable/category_line_pic"
+		android:contentDescription="@string/item_category_desc"
+	/>
+    <LinearLayout
+        android:id="@+id/preview_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/preview_title"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFcccccc" />
+       	<WebView
+       	    android:id="@+id/preview_photo_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+       	/>
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#FFcccccc"
+	    />
+	    <ScrollView
+	    	android:id="@+id/preview_scrollarea"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    >
+	    	<LinearLayout
+	    		android:orientation="vertical"
+	    		android:layout_width="match_parent"
+	    		android:layout_height="wrap_content"
+	    	>
+				<TextView
+					android:id="@+id/preview_content"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					style="@android:style/TextAppearance.Medium"
+					android:text="@string/hint_description"
+				/>
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="#FFcccccc"
+			    />
+				<TextView
+					android:id="@+id/preview_tags"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					style="@android:style/TextAppearance.Medium"
+					android:text="@string/hint_tags"
+				/>
+			</LinearLayout>
+	    </ScrollView>
+	</LinearLayout>
+</LinearLayout>

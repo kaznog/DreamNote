@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+	    android:id="@+id/edit_menu_frag_savehtml"
+	    android:icon="@drawable/ic_menu_globeclip"
+	    android:title="@string/clip_savehtmlbutton_description"
+	    android:showAsAction="always"
+	/>
+	<item
+	    android:id="@+id/edit_menu_frag_savepic"
+	    android:icon="@drawable/ic_menu_galleryclip"
+	    android:title="@string/clip_savepicbutton_description"
+	    android:showAsAction="always"
+	/>
+	<item
+	    android:id="@+id/edit_menu_frag_cancel"
+	    android:icon="@drawable/ic_menu_cancel"
+	    android:title="@string/cancelbutton_description"
+	    android:showAsAction="always"
+	/>
+	<item
+	    android:id="@+id/edit_menu_frag_viewswitch"
+	    android:icon="@drawable/ic_menu_down"
+	    android:showAsAction="always"
+	    android:title="@string/viewswitchbutton_description"
+	/>
+</menu>

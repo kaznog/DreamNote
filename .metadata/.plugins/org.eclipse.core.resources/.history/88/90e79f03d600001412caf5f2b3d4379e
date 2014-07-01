@@ -1,0 +1,30 @@
+strtok_sで文字列を分割する
+
+std::stringでは速度的に不安が出てきたのでstrtok_sを使用することにした。
+strtokだとコンパイラに怒られるので、ここは素直にMSの指示に従おう。
+
+#include <stdio.h>
+#include <string.h>
+
+#ifndef null_ptr
+#define null_ptr 0
+#endif
+
+char str[] ="asdc,fghm jkl;";//分割したい文字列
+char *delim = ", ";//デリミタ（複数渡せる）ここではカンマと空白
+char *ctx;//内部的に使用するので深く考えない
+
+//実行例
+int main()
+{
+    char *next = strtok_s(str, delim, &ctx);
+    while(next){
+        printf("%s\n", next);
+        next = strtok_s(null_ptr, delim, &ctx);
+    }
+    // 出力結果 --------------------------------
+    // >> asdc
+    // >> fghm
+    // >> jkl;
+    return 0;
+}
