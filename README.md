@@ -6,7 +6,7 @@ Artist site: http://raindropmemory.deviantart.com
 Artist facebook: https://www.facebook.com/Raindropmemory
 
 ## Programing: Kazuya Noguchi(kaznog)
-kaznog facebook: https://www.facebook.com/kaznog
+Google+: https://plus.google.com/u/0/101205492640248118853
 
 ## article
 http://octoba.net/archives/20111118-android-2401.html
